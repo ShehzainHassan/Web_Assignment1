@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.nav-list {
+  background-color: #e9ecf2;
+  color: #707276;
+  padding: 10px;
+  text-align: right;
+}
+.nav-ul {
+  list-style-type: none;
+}
+li {
+  margin-right: 30px;
+  display: inline;
+  cursor: pointer;
+}
+li:hover {
+  color: rgb(255, 115, 0);
+}
+.nav-list {
+  font-weight: bold;
+  border: 1px solid #707276;
+}
+#freelancer {
+  color: rgb(255, 115, 0);
+}
+#search {
+  color: rgb(52, 168, 202);
+  border: 1px solid;
+  padding: 15px;
+}
+.nav-bottom {
+  font-size: small;
+  padding: 10px;
+  border: 1px solid #707276;
+}
+.nav-bottom-mobile {
+  font-size: small;
+  padding: 10px;
+  border: 1px solid #707276;
+
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  transform: translateY(-135%);
+}
+.col1,
+.col2 {
+  width: 50%;
+  padding: 15px;
+}
+
+.col1 {
+  color: rgb(231, 149, 10);
+  font-weight: bold;
+  font-size: 400%;
+}
+.main {
+  width: 100%;
+  background-color: #e9ecf2;
+}
+.mobile-main {
+  display: none;
+}
+.main-img {
+  width: 100%;
+}
+.text {
+  font-size: 20px;
+  font-weight: normal;
+  color: rgb(24, 32, 43);
+}
+.searchBar {
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+  border: none;
+}
+
+footer {
+  padding: 10px;
+  background-color: #32353b;
+  color: rgb(171, 178, 196);
+}
+.footerTable {
+  width: 100%;
+}
+.footerList {
+  width: 20%;
+  font-size: small;
+}
+.footerList :hover {
+  cursor: pointer;
+  color: #e9ecf2;
+  text-decoration: underline;
+}
+.listTitle {
+  font-size: medium;
+  margin-bottom: 40px;
+  color: #e9ecf2;
+}
+.endList p {
+  display: inline-block;
+  margin-right: 30px;
+  font-size: small;
+}
+.endList p:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #e9ecf2;
+}
+
+.mobile {
+  display: none;
+}
+#mobileSearch {
+  color: rgb(52, 168, 202);
+  padding: 10px;
+}
+.menu {
+  position: fixed;
+  width: 100%;
+  background: white;
+  transition: all 0.3s ease-in;
+  transform: translateX(100%);
+}
+.mainHeading {
+  font-size: 150%;
+  color: rgb(231, 149, 10);
+  font-weight: bold;
+  padding: 15px;
+}
+.mobileSearch {
+  border: 1px solid;
+  padding: 10px;
+}
+.mobileNavList {
+  display: none;
+  padding: 10px;
+  text-align: left;
+  width: 100%;
+}
+.chevron-down {
+  width: 5%;
+}
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+  .footerList {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-bottom {
+    display: none;
+  }
+  .mobileNavList {
+    display: block;
+  }
+  .mobile-main {
+    display: block;
+  }
+}

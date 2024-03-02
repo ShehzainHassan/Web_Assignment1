@@ -1,0 +1,63 @@
+/* style.css */
+body,
+input {
+  font-family: "Franklin Gothic", "Arial Narrow", Arial, sans-serif;
+}
+
+.container {
+  max-width: 80%px;
+  margin: auto;
+}
+
+.table-header {
+  border: 1px solid;
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.table-header th,
+.table-header td {
+  padding: 10px;
+}
+
+.table-header th {
+  background-color: #2ecc71;
+}
+
+.table-header td {
+  background-color: #70ffac;
+}
+
+.option {
+  width: unset;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  margin-top: 10px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+textarea {
+  width: 100%;
+}
+.btn {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  font-size: larger;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #45a049;
+}

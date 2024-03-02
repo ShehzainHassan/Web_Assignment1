@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Job Application Form</h1>
+        <form id="Job-form" onsubmit="handleSubmit(event)">
+          <table class="table-header">
+            <tr>
+              <th colspan="4">Personal Information</th>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="fname">First Name</label><br />
+                <input
+                  type="text"
+                  id="fname"
+                  name="fname"
+                  placeholder="Enter First Name"
+                  required /><br />
+              </td>
+              <td colspan="2">
+                <label for="lname">Last Name</label><br />
+                <input
+                  type="text"
+                  id="lname"
+                  name="lname"
+                  required
+                  placeholder="Enter Last Name" /><br />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="phone">Phone Number</label><br />
+                <input
+                  type="text"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Enter phone number XXXX-XXXXXXX" /><br />
+              </td>
+              <td colspan="2">
+                <label for="email">Email Address</label><br />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter email address" /><br />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="address">Street</label><br />
+                <input
+                  type="text"
+                  required
+                  id="street"
+                  name="street"
+                  placeholder="Enter street" />
+              </td>
+              <td>
+                <label for="address">City</label><br />
+                <input
+                  type="text"
+                  id="city"
+                  required
+                  name="city"
+                  placeholder="Enter city" />
+              </td>
+              <td>
+                <label for="address">State</label><br />
+                <input
+                  type="text"
+                  id="state"
+                  required
+                  name="state"
+                  placeholder="Enter state" />
+              </td>
+
+              <td>
+                <label for="address">ZIP Code</label><br />
+                <input
+                  type="number"
+                  id="zip"
+                  required
+                  name="zip"
+                  placeholder="Enter ZIP Code" />
+              </td>
+            </tr>
+          </table>
+
+          <table class="table-header">
+            <th colspan="2">Resume and Cover Letter</th>
+            <tr>
+              <td>
+                <label for="resume">Upload Resume</label>
+                <input
+                  type="file"
+                  required
+                  name="resume"
+                  accept=".pdf, .doc, .docx" />
+              </td>
+              <td>
+                <label for="coverletter">Cover Letter</label><br />
+                <textarea
+                  required
+                  placeholder="Write your cover letter"
+                  name="coverLetter"></textarea>
+              </td>
+            </tr>
+          </table>
+
+          <table class="table-header">
+            <th colspan="2">Education</th>
+            <tr>
+              <td>
+                <label for="education"
+                  >Highest Level of Education Attained</label
+                >
+                <input
+                  type="text"
+                  placeholder="e.g., Bachelor's Degree"
+                  required
+                  name="education" />
+              </td>
+              <td>
+                <label for="insitution">Name of School/University</label><br />
+                <input
+                  type="text"
+                  required
+                  placeholder="Your institution name"
+                  name="institution" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="major">Major/Area of Study</label>
+                <input
+                  type="text"
+                  placeholder="e.g., Computer Science"
+                  required
+                  name="major" />
+              </td>
+              <td>
+                <label for="year">Graduation Year</label>
+                <input
+                  type="number"
+                  placeholder="e.g., 2024"
+                  id="year"
+                  required
+                  name="year" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="employment">Employment History</label>
+                <input
+                  type="text"
+                  placeholder="Write your employment history"
+                  required
+                  name="employment" />
+              </td>
+            </tr>
+          </table>
+
+          <table class="table-header">
+            <tr>
+              <th colspan="3">Previous Job Titles</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="company">Company Names</label>
+                <input
+                  type="text"
+                  placeholder="e.g., Company A, Company B"
+                  required
+                  name="company" />
+              </td>
+              <td>
+                <label for="dates">Employment Date (Start Date)</label>
+                <input type="date" id="sdate" required name="sdate" />
+              </td>
+              <td>
+                <label for="dates">Employment Date (End Date)</label>
+                <input type="date" id="edate" required name="edate" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="3">
+                <label for="job">Job Responsibilites</label>
+
+                <input
+                  type="text"
+                  placeholder="Describe your job responsibilities..."
+                  required
+                  name="job" />
+              </td>
+            </tr>
+          </table>
+          <table class="table-header">
+            <tr>
+              <th colspan="2">Skills</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="skills">Relevant Skills</label>
+                <input
+                  type="text"
+                  placeholder="Skill 1, Skill 2, ..."
+                  required
+                  name="skills" />
+              </td>
+              <td>
+                <label for="certificates">Certifications</label>
+                <input
+                  type="text"
+                  placeholder="Any relevant Certifications"
+                  required
+                  name="certificates" />
+              </td>
+            </tr>
+          </table>
+          <table class="table-header">
+            <tr>
+              <th colspan="2">Availability</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="start-date">Start Date</label>
+                <input type="date" required name="stdate" />
+              </td>
+              <td>
+                <label for="work">Preferred Work Schedule</label>
+                <input
+                  type="text"
+                  placeholder="e.g., Mon to Fri"
+                  required
+                  name="work" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="relocate">Willingness to relocate?</label>
+                <div>
+                  <span>
+                    <input type="radio" required class="option" name="choice" />
+                  </span>
+                  <span>Yes</span>
+                </div>
+              </td>
+              <td><input type="radio" class="option" name="choice" />No</td>
+            </tr>
+          </table>
+          <table class="table-header">
+            <tr>
+              <th colspan="2">References</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="reference-name">Reference name</label>
+                <input
+                  type="text"
+                  placeholder="Name of reference"
+                  required
+                  name="referenceName" />
+              </td>
+              <td>
+                <label for="referene-contact"
+                  >Reference Contact Information</label
+                >
+                <input
+                  type="text"
+                  placeholder="Reference Contact Information"
+                  required
+                  name="referenceContact" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <label for="relationship">Relationship to Applicant</label>
+                <input
+                  type="text"
+                  placeholder="e.g., Friend"
+                  required
+                  name="relationship" />
+              </td>
+            </tr>
+          </table>
+          <table class="table-header">
+            <tr>
+              <th>Additional Questions</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="question">
+                  Why do you want to work for this company?</label
+                >
+                <textarea
+                  name="question"
+                  placeholder="Write your reasons here..."
+                  required></textarea>
+              </td>
+            </tr>
+          </table>
+          <table class="table-header">
+            <tr>
+              <th>Consent and Agreement</th>
+            </tr>
+            <tr>
+              <td>
+                <label for="t&c">Agree to Terms and Conditions</label>
+                <input type="checkbox" required name="tC" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <label for="t&c">Privacy Policy Acknowledgement</label>
+                <input type="checkbox" required name="policy" />
+              </td>
+            </tr>
+          </table>
+          <input type="submit" class="btn" value="Submit" />
+          <input
+            type="button"
+            onclick="viewTable()"
+            class="btn"
+            value="View Application As Table" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,80 @@
+.page-border {
+  border: 2px solid #333;
+  padding: 10px;
+  margin: 10px auto;
+  max-width: 500px;
+}
+.name,
+.student,
+.contact {
+  font-family: "Arial", sans-serif;
+}
+
+.name,
+.profile,
+.education-section,
+.skills,
+.certificates,
+.project-section,
+.employment {
+  margin-bottom: 5px;
+  color: blueviolet;
+}
+.name {
+  margin-bottom: 5px;
+}
+
+.student {
+  font-weight: normal;
+  margin-top: 5px;
+}
+
+.contact {
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  list-style-type: none;
+}
+
+.profile {
+  font-family: "Arial", sans-serif;
+  margin-bottom: 5px;
+}
+
+.profile-text {
+  font-family: "Arial", sans-serif;
+  margin-top: 5px;
+}
+
+.table {
+  font-family: "Arial", sans-serif;
+}
+
+.education {
+  font-weight: bold;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.institution {
+  margin-top: 5px;
+}
+.skills-list {
+  list-style: none;
+}
+.awards {
+  margin-top: 5px;
+}
+
+.first-col,
+.second-col {
+  vertical-align: baseline;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}

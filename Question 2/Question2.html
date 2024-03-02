@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="desktop nav-list">
+        <ul class="nav-ul">
+          <li id="search">🔍 SEARCH</li>
+          <li>HOW IT WORKS</li>
+          <li>LOG IN</li>
+          <li>SIGN UP</li>
+          <li id="freelancer">FREELANCER?</li>
+        </ul>
+      </nav>
+      <nav class="mobile nav-list">
+        <button onclick="onMenuClick()">☰</button>
+      </nav>
+      <div>
+        <button onclick="onNavClick()" class="mobile nav-list mobileNavList">
+          Browse By Category
+          <img class="chevron-down" src="/Question 2/Icons/chevron-down.svg" />
+        </button>
+      </div>
+
+      <div id="mobileNav" class="mobile nav-bottom-mobile">
+        <p>Technology & Programming</p>
+        <p>Writing & Translation</p>
+        <p>Design</p>
+        <p>Digital Marketing</p>
+        <p>Video, Photo & Image</p>
+        <p>Business</p>
+        <p>Music & Audio</p>
+        <p>Marketing, Branding & Sales</p>
+        <p>Social Media</p>
+      </div>
+      <div class="menu" id="menuBar">
+        <ul>
+          <li class="mobileNavList" id="mobileSearch">🔍 SEARCH</li>
+          <hr />
+          <li class="mobileNavList">HOW IT WORKS</li>
+          <hr />
+          <li class="mobileNavList">LOG IN</li>
+          <hr />
+          <li class="mobileNavList">SIGN UP</li>
+          <hr />
+          <li class="mobileNavList">FREELANCER?</li>
+        </ul>
+      </div>
+      <nav class="nav-bottom">
+        <ul>
+          <li>Technology & Programming</li>
+          <li>Writing & Translation</li>
+          <li>Design</li>
+          <li>Digital Marketing</li>
+          <li>Video, Photo & Image</li>
+          <li>Business</li>
+          <li>Music & Audio</li>
+          <li>Marketing, Branding & Sales</li>
+          <li>Social Media</li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <img
+        class="mobile main-img"
+        src="/Question 2/Internet_20240301_183027.png"
+        alt="Laptop Pic" />
+    </div>
+    <div class="mobile-main">
+      <p class="mainHeading">Make bright ideas happen</p>
+      <p class="text">
+        Access global talent on the freelancer website trusted by over 1 million
+        businesses worldwide
+      </p>
+      <input
+        class="searchBar mobileSearch"
+        placeholder="Try ''web development''"
+        type="text" />
+    </div>
+    <table class="desktop main">
+      <tr>
+        <td class="col1">
+          Make bright ideas happen
+          <div>
+            <p class="text">
+              Access global talent on the freelancer website trusted by over 1
+              million businesses worldwide
+            </p>
+            <input
+              class="searchBar"
+              placeholder="Try ''web development''"
+              type="text" />
+          </div>
+        </td>
+        <td class="col2">
+          <img
+            class="main-img"
+            src="/Question 2/Internet_20240301_183027.png" />
+        </td>
+      </tr>
+    </table>
+    <footer>
+      <table class="footerTable">
+        <tr>
+          <td class="footerList">
+            <p class="listTitle">Product</p>
+            <p>About</p>
+            <p>Team</p>
+            <p>Careers</p>
+          </td>
+          <td class="footerList">
+            <p class="listTitle">Support</p>
+            <p>How it works</p>
+            <p>Trust & Safety</p>
+            <p>Help Centre</p>
+          </td>
+          <td class="footerList">
+            <p class="listTitle">Discover</p>
+            <p>Guides</p>
+            <p>Stories</p>
+            <p>News</p>
+          </td>
+          <td class="footerList">
+            <p class="listTitle">Resources</p>
+            <p>TalentDesk</p>
+            <p>Business Cost Calculator</p>
+            <p>Startup Cities</p>
+          </td>
+          <td class="footerList">
+            <p class="listTitle">Browse</p>
+            <p>Freelance Services</p>
+            <p>Freelance Services By Country</p>
+            <p>Freelance Skills</p>
+          </td>
+        </tr>
+      </table>
+      <hr />
+      <div class="endList">
+        <p>Terms</p>
+        <p>Privacy</p>
+        <p>Sitmap</p>
+        <p>Company Details</p>
+        <p>&copy; 2024 People Per Hour Ltd</p>
+      </div>
+    </footer>
+  </body>
+</html>
