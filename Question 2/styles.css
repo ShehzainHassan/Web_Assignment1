@@ -1,5 +1,5 @@
 body {
-  font-family: Arial, sans-serif;
+  font-family: Open Sans, Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -34,7 +34,6 @@ li:hover {
 }
 .nav-bottom {
   font-size: small;
-  padding: 10px;
   border: 1px solid #707276;
 }
 .nav-bottom-mobile {
@@ -57,6 +56,7 @@ li:hover {
   color: rgb(231, 149, 10);
   font-weight: bold;
   font-size: 400%;
+  font-family: Nunito, Arial, Helvetica, sans-serif;
 }
 .main {
   width: 100%;
@@ -72,6 +72,7 @@ li:hover {
   font-size: 20px;
   font-weight: normal;
   color: rgb(24, 32, 43);
+  padding: 10px;
 }
 .searchBar {
   padding: 20px;
@@ -80,6 +81,12 @@ li:hover {
   border: none;
 }
 
+.logo {
+  width: 15%;
+  position: absolute;
+  top: 3%;
+  left: 2%;
+}
 footer {
   padding: 10px;
   background-color: #32353b;
@@ -128,7 +135,8 @@ footer {
   transform: translateX(100%);
 }
 .mainHeading {
-  font-size: 150%;
+  font-family: Nunito, Arial, sans-serif;
+  font-size: 200%;
   color: rgb(231, 149, 10);
   font-weight: bold;
   padding: 15px;

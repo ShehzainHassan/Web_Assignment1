@@ -1,5 +1,6 @@
 let isExpand = false;
 let isNavExpand = false;
+
 function onMenuClick() {
   const menu = document.getElementById("menuBar");
   if (!isExpand) {
@@ -10,6 +11,7 @@ function onMenuClick() {
     isExpand = false;
   }
 }
+
 function onNavClick() {
   const nav = document.getElementById("mobileNav");
   if (!isNavExpand) {
